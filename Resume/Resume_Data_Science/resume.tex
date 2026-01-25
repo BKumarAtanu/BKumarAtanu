@@ -1,0 +1,488 @@
+% !TEX root = resume.tex
+% !TeX program = lualatex
+% !BIB program = biber
+% !TEX bibfile = file.bib
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+% 
+\documentclass[
+	10pt, % Default font size, can be between 8pt and 12pt
+]{RESUME}
+
+%-----------------------
+% Make PDF Dark
+
+% \pagecolor[rgb]{0.5,0.5,0.5} % Gray backgrond
+
+% \color[rgb]{0.5,0.5,0.5} %grey
+%-----------------------
+
+\columnratio{0.55, 0.45} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content 
+
+% Headers and footers can be added with the following commands: \lhead{}, \rhead{}, \lfoot{} and \rfoot{}
+% Example right footer:
+%\rfoot{\textcolor{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin two-column mode
+
+	%----------------------------------------------------------------------------------------
+	%	YOUR NAME AND CURRICULUM VITAE TITLE
+	%----------------------------------------------------------------------------------------
+
+	\parbox[][0.11\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
+		\centering % Horizontally center text
+
+		{\sffamily\Huge Atanu Kumar Biswas} % Your name
+
+		\medskip % Vertical whitespace
+
+		{\cursivefont\Huge\textcolor{headings}{Cyber Security Intern}}
+
+		\vfill % Push content to the top of the box
+
+	}
+
+
+	%----------------------------------------------------------------------------------------
+	%	EDUCATION
+	%----------------------------------------------------------------------------------------
+
+	\section{Education}
+
+	% Each qualification entry is added with a \qualificationentry command. Below is an empty one to use as a template:
+
+	%\qualificationentry
+	%	{} % Duration
+	%	{} % Degree
+	%	{} % Honors, achievements or distinctions (e.g. first class honors)
+	%	{} % Department
+	%	{} % Institution
+
+	% All 5 parameters must be supplied but any can be empty if you don't need them
+
+	%------------------------------------------------
+
+	\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\qualificationentry
+		{2016 - 2022} % Duration
+		{Bachelor of Science} % Degree
+		{} % Honors, achievements or distinctions (e.g. first class honors)
+		{Computer Science and Engineering } % Department
+		{Chittagong University of Engineering \& Technology} % Institution
+		%------------------------------------------------
+
+	\end{supertabular}
+
+
+
+
+	%----------------------------------------------------------------------------------------
+	%	MAJOR RESEARCH PROJECT
+	%----------------------------------------------------------------------------------------
+
+	\section{Undergraduate Research}
+
+	 {\raggedright\textbf{"A distributed and transparent food supply chain management system using blockchain and IoT technologies"}\par}
+
+	\medskip % Vertical whitespace
+	In this project I worked on food supply chain System. As we know that food supply chain
+	is the most crucial supply chain on our planet. Existing food supply
+	chain systems do not investigate features like food origin traceability, timestamps of food
+	processing, a proper money distribution facility among the parties, and a customer feedback
+	evaluation system at the same time. To make the food supply we've used IoT and
+	blockchain technologies. Three different blockchains
+	are developed for customers, warehouses, and farmers. Customer blockchain is public and
+	anyone can participate in this. Other blockchains are private and require registration for
+	participation. Our experimental results based on sensors and blockchain data show that our
+	proposed scheme improves 96.83\% of the existing scheme's time.
+	\medskip % Extra vertical whitespace before the next section
+
+	%----------------------------------------------------------------------------------------
+	%	WORK EXPERIENCE
+	%----------------------------------------------------------------------------------------
+
+	\section{Work Experience}
+
+	% Each job is added with a \jobentry command. Below is an empty one to use as a template:
+
+	%\jobentry
+	%	{} % Duration
+	%	{} % FT/PT (full time or part time)
+	%	{} % Employer
+	%	{} % Job title
+	%	{} % Description
+
+	% All 5 parameters must be supplied but any can be empty if you don't need them
+
+	%------------------------------------------------
+
+	\jobentry
+	{Aug, 2019 - Sep, 2019} % Duration
+	{FT} % FT/PT (full time or part time)
+	{Contessa Solutions \& Consultants Ltd.} % Employer
+	{ Student Intern } % Job title
+	{As part of this internship, we learned how data center works. We created some virtual machine using
+		\textit{VMware ESXi} formerly known as ESX is a bare metal hypervisor. We learn little bit of network
+		virtualization. We created some virtual storage to test how data center works.} % Description
+
+	%------------------------------------------------
+	%------------------------------------------------
+
+	\jobentry
+	{2016 - 2017} % Duration
+	{FT} % FT/PT (full time or part time)
+	{The NASA Human Exploration Rover Challenge (HERC)} % Employer
+	{Team Leader (Software Team)} % Job title
+	{As part of this project, we learned \textit{Arduino, RaspbarryPi, GPS, Motor Operation, Robotic Arm
+			Operation, Different type or sensor ( pH, moisture, sonar, IR }. We also to build \textit{image processing}
+		tool that
+		can detect colored ( for example red) ball and follow the path accordingly. We communicate with the robot
+		using \textit{radio} communication and \textit{Bluetooth}. We used \textit{Socket Programming} to
+		communicate with server. Our team selected for the competition.} % Description
+
+	%------------------------------------------------
+	%------------------------------------------------
+
+	\jobentry
+	{Jun, 2016 - Aug, 2016} % Duration
+	{FT} % FT/PT (full time or part time)
+	{Robotic Competition} % Employer
+	{Team Leader (Robot Racing Team CSE, CUET)} % Job title
+	{As part of this promotion, we learned hot to build a robot that can detect black line on white surface
+		and follow the path. We programmed the robot using Arduino and IR sensor. Our task is to follow the path
+		and stop at the destination as fast as possible.} % Description
+
+	%------------------------------------------------
+
+
+	%------------------------------------------------
+	\break
+	%------------------------------------------------
+
+	%----------------------------------------------------------------------------------------
+	%	REFERENCES
+	%----------------------------------------------------------------------------------------
+	\section{References}
+
+	%\textit{References available on request} % Uncomment if you'd rather not include references and remove the section below
+
+	%------------------------------------------------
+
+	% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+	%\tableentry{Heading}{Content}{spaceafter}
+	% All 3 parameters must be supplied but any can be empty if you don't need them
+	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+	%------------------------------------------------
+
+	\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\tableentry{}{\textbf{Pranto Biswas}}{}
+		\tableentry{}{\href{https://www.linkedin.com/in/pranxol/}{\textit{Software Engineer}}}{spaceafter}
+		\tableentry{Position}{Software Engineer L2}
+
+		\tableentry{Organization}{\href{https://www.linkedin.com/company/681429/}{\textit{Enosis Solutions}}}{spaceafter}
+		\tableentry{Email}{\href{mailto:pranto.biswas@enosisbd.com}{pranto.biswas@enosisbd.com} (Work)}{}
+		\tableentry{Phone}{+88 01521-221409 (Work)}{}
+
+		%------------------------------------------------
+
+		\\ % Additional vertical whitespace between the references
+
+
+	\end{supertabular}
+
+	\medskip % Extra vertical whitespace before the next section
+
+	%----------------------------------------------------------------------------------------
+
+	\switchcolumn % Switch to the second (right) column
+
+	%----------------------------------------------------------------------------------------
+	%	COLORED CONTACT DETAILS BOX
+	%----------------------------------------------------------------------------------------
+
+	\parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
+		\colorbox{shade}{ % Create colored box and specify background color
+			\begin{supertabular}{@{\hspace{3pt}} p{0.05\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+				\raisebox{-1pt}{\faHome} & Padmapukur, Koyra, Khulna, 9290 \\ % Address
+
+				\raisebox{-1pt}{\faPhone} & +88 01907-956568 \\ % Phone number
+
+				\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:BKumarAtanu@zohomail.com}{bkumaratanu@zohomail.com} \\ % Email address
+				\raisebox{-1pt}{\small\faLinkedin} & \href{https://www.linkedin.com/in/bkumaratanu/}{linkedin.com/in/BKumarAtanu}\\ % Linkedin
+
+				\raisebox{-1pt}{\small\faGlobe} & \href{https://bkumaratanu.github.io/BKumarAtanu/}{bkumaratanu.github.io/BKumarAtanu}\\ % Website
+
+				\raisebox{-1pt}{\small\faGithub} & \href{https://github.com/BKumarAtanu}{github.com/BKumarAtanu}\\ % Github
+
+				% \raisebox{-1pt}{\small\faGitlab} & \href{https://gitlab.com/BKumarAtanu}{gitlab.com/BKumarAtanu}\\ % Gitlab
+
+				%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+				%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+				% See fontawesome.pdf in the Fonts folder for all icons you can use
+			\end{supertabular}
+		}
+		\vfill % Push content to the top of the box
+	}
+
+
+
+	%----------------------------------------------------------------------------------------
+	%	AWARDS
+	%----------------------------------------------------------------------------------------
+
+	\section{Competitions}
+
+	% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+	%\tableentry{Heading}{Content}{spaceafter}
+	% All 3 parameters must be supplied but any can be empty if you don't need them
+	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+	%------------------------------------------------
+
+	\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\tableentry{2016}{\textbf{Roborace}}{}
+		\tableentry{}{\textit{\href{https://www.cuet.ac.bd/}{CUET}}}{spaceafter}
+
+		%------------------------------------------------
+
+		\tableentry{2017}{\textbf{NASA Mars Exploration Rovers}}{}
+		\tableentry{}{\textit{\href{https://www.nasa.gov/learning-resources/nasa-human-exploration-rover-challenge/}{NASA Human Expl. Rover Challenge (HERC)}}}{spaceafter}
+
+		%------------------------------------------------
+
+	\end{supertabular}
+
+	%----------------------------------------------------------------------------------------
+	%	SKILLS DESCRIPTION
+	%----------------------------------------------------------------------------------------
+
+	\section{Programming Skills}
+
+	\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\tableentry{Beginner}{R, Go, API,}{}
+		\tableentry{}{HTML, CSS, JavaScript, GNU Octave }{spaceafter}
+
+		%------------------------------------------------
+		\tableentry{Intermediate}{C, C++, SQL, Git}{}
+		\tableentry{}{Shell Scripting}{spaceafter}
+
+		%------------------------------------------------
+
+		\tableentry{Expert}{Python}{spaceafter}
+
+		%------------------------------------------------
+	\end{supertabular}
+
+
+	%----------------------------------------------------------------------------------------
+	%	COMPUTER SKILLS
+	%----------------------------------------------------------------------------------------
+
+	\section{Technical Proficiency}
+
+	% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+	%\tableentry{Heading}{Content}{spaceafter}
+	% All 3 parameters must be supplied but any can be empty if you don't need them
+	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+	%------------------------------------------------
+
+	\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\tableentry{Beginner}{Inkscape, Libreoffice }{spaceafter}
+
+		%------------------------------------------------
+		\tableentry{Intermediate}{Anaconda, Calibre}{}
+		\tableentry{}{\LaTeX, Markdown}{}
+		\tableentry{}{Microsoft Windows}{}
+		\tableentry{}{Computer Hardware \& Support}{spaceafter}
+
+		%------------------------------------------------
+
+		\tableentry{Expert}{Linux OS}{spaceafter}
+
+		%------------------------------------------------
+
+	\end{supertabular}
+
+
+	%----------------------------------------------------------------------------------------
+	%   CERTFICATIONS	
+	%----------------------------------------------------------------------------------------
+
+
+	\section{Online Certifications}
+
+	%------------------------------------------------
+	\subsection{\textbf{Machine Learning}}
+	\begin{itemize}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/89efb9c64a2ba11dbe758718478b1e6584482f53?raw=1}
+		      {\textcolor{black}{\textit{Supervised Learning with scikit-learn}}}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/5a11a956cbbf72f58df34ebb4bcb8953d50827da?raw=1}
+		      {\textcolor{black}{\textit{Unsupervised Learning in Python}}}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/4ecb52a63fbb1b3a1ca42c34374826979cd1cb48?raw=1}
+		      {\textcolor{black}{\textit{Machine Learning with Tree-Based Models in Python}}}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/66403a5d2f4b1113615c4332ff47006d7d6b273d?raw=1}
+		      {\textcolor{black}{\textit{Hypothesis Testing in Python}}}
+
+		\item[\faCertificate] \href{https://mega.nz/file/olQSCLgR\#MNku1sr157kYUQNx9KW2Ajq9rqzuz5S4D2XCS38LaSc}
+		      {\textcolor{black}{\textit{Machine Learning and Artificial Intelligence Fundamentals with Python}}}
+
+	\end{itemize}
+
+	\subsection{\textbf{Data Manupulation}}
+	\begin{itemize}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/fbc94a874eb1ade1ed86b66c19fd32b3c5077f2a?raw=1}
+		      {\textcolor{black}{\textit{Sampling in Python}}}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/62a92ec8ef730881263a99b128064cc771ca7519?raw=1}
+		      {\textcolor{black}{\textit{Data Manipulation with pandas}}}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/55a0802fb62bd726dbdb6906505f54d98f8f1c6c?raw=1}
+		      {\textcolor{black}{\textit{Manipulating Time Series Data in Python}}}
+	\end{itemize}
+	% Customized bullets
+	\subsection{\textbf{Data Visualization}}
+
+	\begin{itemize}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/17c9ab4dc4eb990e81e2b675f3d6375691e66614?raw=1}
+		      {\textcolor{black}{\textit{Data Visualization with Matplotlib}}}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/0193c3a65db0fe46cd4d1dda686015f6964744bf?raw=1}
+		      {\textcolor{black}{\textit{Data Visualization with Seaborn}}}
+	\end{itemize}
+
+
+	% \item[\faCertificate] \href{}
+	%       {\textcolor{black}{\textit{}}}
+	\subsection{\textbf{Scripting}}
+
+	\begin{itemize}
+
+		\item[\faCertificate] \href{https://www.datacamp.com/statement-of-accomplishment/course/af330fd7f2c7b67b78329c57e31171f67dd2daba?raw=1}
+		      {\textcolor{black}{\textit{Introduction to Bash Scripting}}}
+
+	\end{itemize}
+
+	\break
+	%----------------------------------------------------------------------------------------
+	%	COMMUNICATION SKILLS
+	%----------------------------------------------------------------------------------------
+
+	\section{Communication Skills}
+
+	% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+	%\tableentry{Heading}{Content}{spaceafter}
+	% All 3 parameters must be supplied but any can be empty if you don't need them
+	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+	%------------------------------------------------
+
+	\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\tableentry{Languages}{Bangla, English}{}
+		\tableentry{Bangla}{\faStar\faStar\faStar\faStar \faStarO }{}
+		\tableentry{English}{\faStar \faStar \faStar \faStarO \faStarO}{}
+		% \tableentry{Hindi}{\faStar \faStar \faStarHalfFull \faStarO \faStarO}{spaceafter}
+
+		%------------------------------------------------
+
+		\tableentry{Team Work}{\faStar \faStar \faStar \faStarHalfFull \faStarO} {}
+		\tableentry{}{I've worked with \textbf{4} teams already}{spaceafter}
+
+		%------------------------------------------------
+
+		\tableentry{Team Leading}{\faStar \faStar \faStar \faStarHalfFull \faStarO} {}
+		\tableentry{}{I've leaded \textbf{2} teams already}{spaceafter}
+
+	\end{supertabular}
+
+	%------------------------------------------------
+	%------------------------------------------------
+
+	%----------------------------------------------------------------------------------------
+	%	PUBLICATIONS
+	%----------------------------------------------------------------------------------------
+	\section{Publications}
+
+	%------------------------------------------------
+
+	\textbf{Atanu Kumar Biswas} (2022) \\
+	\medskip % Vertical whitespace
+	\textbf{Mahfuzulhoq Chowdhury} (2022).\\
+	A distributed and transparent food supply chain management system using blockchain and IoT technologies. \textit{International Journal of Society Systems Science, Vol. 14, No. 1}.
+
+	\medskip % Vertical whitespace
+
+	%------------------------------------------------
+
+	% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+	% Example \doipublication{} command to add another publication:
+
+	%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+	% All four parameters are required (can be empty though)
+	% A value of "firstauthor" in the third parameter will output the DOI in bold
+	% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+	%------------------------------------------------
+
+	\subsection{Publications by DOI}
+
+	\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\doipublication{2022}{10.1504/IJSSS.2022.128099}{firstauthor}{spaceafter}
+
+		%------------------------------------------------
+
+		& \textit{First author publications in} \textbf{first place}\\
+
+		%------------------------------------------------
+
+	\end{supertabular}
+
+	\medskip % Extra whitespace before the next section
+
+	%----------------------------------------------------------------------------------------
+
+\end{paracol} % End two-column mode
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
